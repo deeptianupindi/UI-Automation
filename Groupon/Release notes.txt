@@ -1,0 +1,24 @@
+Application Features
+====================
+1. This application navigates to www.Groupon.com, and upon seeing the prompt for email and zipcode, enters values and proceeds next.
+2. It goes to All Deals page, scrolls down to the bottom and clicks on "30 More Deals" button to expand all deals multiple times until there are no more to load.
+3. It captures the main details - title, merchant, price, location and url of all the deals and prints out to a text file in a neat readable format.
+4. It prints the runtime progress of application onto the eclipse console.
+5. Currently it uses specific email address and zipcode to get past the initial popup.
+
+Future Enhancements
+===================
+1. This application can be parameterized if needed, to input customized email, zipcode, browser of choice, file/folder, other output methods.
+2. Firefox WebDriver was chosen to demonstrate the UI automation. In order to improve the running time, the Firefox Webdriver can be replaced by a HTML Unit Driver.
+
+Resources to run the application
+===================================
+1. Firefox browser should be installed and available
+2. Java version required is 1.7
+3. IDE preferred is Eclipse
+4. This application was developed and tested on Windows 7 OS
+
+
+BDD & Unit testing
+==================
+1. Concordion + JUnit is used to demonstrate few behavior-driven testcases. There is scope to add additional specs and tests.

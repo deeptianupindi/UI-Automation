@@ -1,0 +1,23 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+	<body>
+		<p>
+		TestCase1: Given an url--> <span concordion:set="#url">http://www.google.com</span>  
+			<p> When I navigate to that website</p>           
+        		<p> I get back the title of the webpage as: <span concordion:assertEquals="initializeDriverWithSampleUrl(#url)">Google</span>
+        	</p>
+         </p>     
+         <p>
+		TestCase2: Given an empty url--> <span concordion:set="#url"></span>  
+			<p> When I navigate to that site</p>           
+        		<p> I should not get back anything <span concordion:assertEquals="initializeDriverWithEmptyUrl(#url)"></span>
+        	</p>
+         </p>    
+         <p>  
+         TestCase3: Given an email address--><span concordion:set="#testEmail">xyz@grpn.com</span> 
+         				and a zipcode-->	 <span concordion:set="#testZip">12345</span> 
+			<p> When I insert my email address and zipcode into the popup</p>           
+        		<p> I should get all deals for that city, I confirm by getting the page title <span concordion:assertEquals="navigateToAllDealsAndGetPageTitle(#testEmail,#testZip)">All Albany / Capital Region Deals | Groupon</span>
+        		</p>
+         </p>       
+	</body>
+</html>
